@@ -1,3 +1,4 @@
+(function($){
         //Article Menu
 
         var openArticle = function () {
@@ -117,6 +118,7 @@
 
 //anchor scrolling 
 
+/*
 var $root = $('html, body');
 $('a').click(function() {
     var href = $.attr(this, 'href');
@@ -127,8 +129,30 @@ $('a').click(function() {
     });
     return false;
 });
+*/
 
+$('#menu').singlePageNav({
+	updateHash: true,
+	currentClass: 'active',
+	beforeStart: function() {
+	//	console.log('begin scrolling');
+	},
+	onComplete: function() {
+	}
+});
+
+$(window).scroll(function(){
+	var currentParent = $('#menu a.active').closest('div.ui-accordion-content').prev('h3');
+	if (currentParent.hasClass('ui-state-active')){
+		//do nothing
+	}
+	else {
+	currentParent.trigger('click');
+		        }
+});
 
 $(function() {
     FastClick.attach(document.body);
 });
+
+})(jQuery);

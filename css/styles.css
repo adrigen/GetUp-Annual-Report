@@ -36,6 +36,12 @@ body {
     float:right!important;
 }
 
+/*--------------------------------*/
+/*-------------RESET--------------*/
+/*--------------------------------*/
+h1,h2,h3,h4,h5 {
+	font-weight:normal;
+}
 
 /*--------------------------------*/
 /*-------------MENU---------------*/
@@ -44,10 +50,12 @@ body {
 
 .menu {
     background-color: #b5b5b5;
-    float:left;
     text-align: left;
     z-index: 1000;
     text-transform: uppercase;
+    max-height: 100%;
+    overflow-y: auto;
+    float:left;
 }
 
 .menu h3 {
@@ -160,8 +168,7 @@ body {
     position: relative;
     background-color: #444;
     float:right;
-    line-height: 0;
-    line-height: 0;
+    line-height: 0; 
     overflow: hidden;
 }
 
@@ -325,7 +332,7 @@ body {
     background:#f05226;
     font-family: "bebasregular", sans-serif;
     color: #fff;
-    font-weight: bold;
+    //font-weight: bold;
 }
 
 #members_1 div{
@@ -340,7 +347,7 @@ body {
 #members_1 #totalMembers h3{
     font-size: 65px;   
     margin-bottom: 55px;
-    margin-top: 50px;
+    margin-top: 57px;
 }
 
 #members_1 #totalMembers h4{
@@ -569,7 +576,7 @@ body {
 }
 
 #coreMembers h3 {
-    font-family: 'bebasregular' sans-serif;
+    font-family: 'bebasregular', sans-serif;
     font-size: 80px;
     text-align: left;
     margin-bottom: 50px;
@@ -577,18 +584,18 @@ body {
 }
 
 #coreMembers h4 {
-    font-family: 'bebasregular' sans-serif;
+    font-family: 'bebasregular', sans-serif;
     font-size: 26px;
-    line-height: 30px;
+    line-height: 28px;//having this smaller squishes the text in FF, found this to be the best balance
     text-transform: uppercase;
     text-align: left;
     padding-left: 20px;
 }
 
 #coreMembers h3 span{
-        font-family: 'bebasregular' sans-serif;
+    font-family: 'bebasregular', sans-serif;
     font-size: 26px;
-    line-height: 30px;
+    line-height: 38px;
     text-transform: uppercase;
     text-align: left;
     padding-left: 20px;
@@ -849,6 +856,7 @@ body {
     text-transform: uppercase;
     font-size: 18px;
     padding-left: 25px;
+    line-height:1;
 }
 
 #financials h4 {
@@ -857,7 +865,7 @@ body {
     font-size: 70px;
     color: #4691ce;
     padding-left: 30px;
-    margin-top: 55px;
+    margin-top: 45px;
 }
 
 #financials ul {
@@ -1166,7 +1174,7 @@ body {
 
 #vision .data h4, #vision .infoContainer h4{
     text-transform: uppercase;
-    font-family: 'bebasregular' sans-serif;
+    font-family: 'bebasregular', sans-serif;
     font-size: 35px;
     color: #f05226;
     padding-top: 5px;
@@ -1176,7 +1184,7 @@ body {
  margin:auto;
     line-height: normal;
     text-transform: uppercase;
-    font-family: 'bebasregular' sans-serif;
+    font-family: 'bebasregular', sans-serif;
     font-size: 16px;
     text-align: left;
     float: left;
@@ -1436,7 +1444,7 @@ body {
 
     #financials h4 {
         font-size: 80px;
-        margin-top: 55px;
+        margin-top: 45px;
     }
 }
 
