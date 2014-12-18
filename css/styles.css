@@ -1,4 +1,20 @@
 
+/*--------------------------------*/
+/*-------------RESET--------------*/
+/*--------------------------------*/
+h1,h2,h3,h4,h5 {
+	font-weight:normal;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+img {
+	max-width:100%;
+}
+/**/
 
 body {
     width: 100%;   
@@ -34,13 +50,6 @@ body {
 
 .position-right {
     float:right!important;
-}
-
-/*--------------------------------*/
-/*-------------RESET--------------*/
-/*--------------------------------*/
-h1,h2,h3,h4,h5 {
-	font-weight:normal;
 }
 
 /*--------------------------------*/
@@ -247,6 +256,11 @@ h1,h2,h3,h4,h5 {
     float: none!important;
 }
 
+img.quote {
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
 #about_us {
 
 }
@@ -289,6 +303,7 @@ h1,h2,h3,h4,h5 {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	border:none;
 }
 
 #community {
@@ -332,7 +347,6 @@ h1,h2,h3,h4,h5 {
     background:#f05226;
     font-family: "bebasregular", sans-serif;
     color: #fff;
-    //font-weight: bold;
 }
 
 #members_1 div{
@@ -562,7 +576,7 @@ h1,h2,h3,h4,h5 {
     font-size: 16px;
     line-height: 20px;
     clear: left;
-    padding: 10px 0 0 20px;
+    padding: 10px 20px 0 20px;
 }
 
 #coreMembers h2 {
@@ -586,7 +600,8 @@ h1,h2,h3,h4,h5 {
 #coreMembers h4 {
     font-family: 'bebasregular', sans-serif;
     font-size: 26px;
-    line-height: 28px;//having this smaller squishes the text in FF, found this to be the best balance
+    line-height: 28px;
+    /*having this smaller squishes the text in FF, found this to be the best balance */
     text-transform: uppercase;
     text-align: left;
     padding-left: 20px;
@@ -641,7 +656,7 @@ h1,h2,h3,h4,h5 {
   background: url("../img/heading_social_media.png") no-repeat;
     background-size:cover;
   width: 540px;
-  height: 25px;
+  height: 35px;
     text-indent: -9999px;
    display: block;
     margin-top: 20px;
@@ -710,62 +725,62 @@ h1,h2,h3,h4,h5 {
     background-position:bottom!important;
 }
 
-#articles .article-menu #climate a {
+#articles .article-menu #climate_button a {
     background: url("../img/article_cta_climate.png") no-repeat;
     background-size:cover; 
 }
 
-#articles .article-menu #gbr a{
+#articles .article-menu #gbr_button a{
     background: url("../img/article_cta_reef.png") no-repeat;
     background-size:cover; 
 }
 
-#articles .article-menu #abc a{
+#articles .article-menu #abc_button a{
     background: url("../img/article_cta_abc.png") no-repeat;
     background-size:cover; 
 }
 
-#articles .article-menu #refugees a{
+#articles .article-menu #refugees_button a{
     background: url("../img/article_cta_refugees.png") no-repeat;
     background-size:cover; 
 }
 
-#articles .article-menu #csg a {
+#articles .article-menu #csg_button a {
     background: url("../img/article_cta_csg.png") no-repeat;
     background-size:cover; 
 }
 
-#articles .article-menu #election a{
+#articles .article-menu #election_button a{
     background: url("../img/article_cta_election.png") no-repeat;
     background-size:cover; 
 }
 
-#articles .article-menu #democracy a{
+#articles .article-menu #democracy_button a{
     background: url("../img/article_cta_democracy.png") no-repeat;
     background-size:cover; 
 }
 
-#articles .article-menu #power a{
+#articles .article-menu #power_button a{
     background: url("../img/article_cta_power.png") no-repeat;
     background-size:cover; 
 }
 
-#articles .article-menu #marriage a {
+#articles .article-menu #marriage_button a {
     background: url("../img/article_cta_marriage.png") no-repeat;
     background-size:cover; 
 }
 
-#articles .article-menu #meet a{
+#articles .article-menu #meet_button a{
     background: url("../img/article_cta_meet.png") no-repeat;
     background-size:cover; 
 }
 
-#articles .article-menu #fairness a{
+#articles .article-menu #fairness_button a{
     background: url("../img/article_cta_fairness.png") no-repeat;
     background-size:cover; 
 }
 
-#articles .article-menu #forests a{
+#articles .article-menu #forests_button a{
     background: url("../img/article_cta_forests.png") no-repeat;
     background-size:cover; 
 }
@@ -1013,15 +1028,16 @@ h1,h2,h3,h4,h5 {
     background: url("../img/expenditures_bg.png") no-repeat;
     background-size: cover;
 }
+#expenditure .piestats h3 {
+	    padding-left:40px;
+ }
 
 .right-expenditure p{
     padding-left:15%!important;   
 }
 
 #expenditure img.elipse{
-    width: 50%;
-    padding: 0px 25% 0 40px;
-    float:right;
+    padding: 0px 0 0 40px;
 }
 
 /*
@@ -1044,7 +1060,7 @@ h1,h2,h3,h4,h5 {
     text-transform: uppercase;
     margin-bottom: 10px;
     padding-top: 20px;
-    margin-left:-40px;
+    margin-left:0px;
 }
 
 #expenditure span{
@@ -1293,6 +1309,7 @@ h1,h2,h3,h4,h5 {
     padding: 0px 0 0 40px;
     margin-bottom: -5px;
     font-weight: bold;
+    line-height:1;
 }
     
 #team p{
@@ -1406,19 +1423,22 @@ h1,h2,h3,h4,h5 {
 */
 
 /*Target Large Screens*/
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64em) { /*1024px lg*/
         
     #members_1 div:last-child {
             text-align: left!important;   
      }
     
-    .content-center img{
+    .content-center img {
         width:100%;
+    }
+    #expenditure .piestats { 
+	    text-align:right;
     }
 }
 
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 48em) { /*768px md*/
 
     
     #hamburger {
@@ -1450,7 +1470,7 @@ h1,h2,h3,h4,h5 {
 
 
 /*Target Small Screens*/
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 48em) { /*768px md*/
     
     
     #community_2 p{
@@ -1463,10 +1483,6 @@ h1,h2,h3,h4,h5 {
     
     #community_2 .quote{
         padding-left:40px;
-    }
-    
-     #expenditure h3{
-        font-size: 14px;   
     }
     
 #communityrun .data {
@@ -1629,6 +1645,78 @@ h1,h2,h3,h4,h5 {
     .article-margin {
         display:none;   
     }
+
+.article-content h3 {
+    padding-bottom:0px;   
+}
+
+.article-content h5 {
+    font-weight: bold;   
+}
+
+p.orange-para {
+    color:#f05226!important;
+    font-weight: bold;
+    font-size: 16px!important;
+    line-height: 20px!important;
+}
+
+.orange-box {
+    background: #f05226;
+    margin-top:30px;
+    margin-bottom: 30px;
+    max-width: 565px;
+    margin-left:10px;
+}
+
+.orange-box div{
+    padding:20px;   
+}
+
+.orange-box p{
+    color:#fff!important;
+    font-size: 15px!important;
+    line-height: 20px!important;
+}  
+
+.orange-box a{
+    color:#000!important;
+    text-decoration: underline;
+}
+
+.orange-box p span{
+    text-transform: uppercase;
+}   
+
+.bordered-box {
+    padding:0 15px 15px 15px;
+    border: solid 3px #797979;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bordered-box span{
+    text-transform: uppercase;
+        color:#f05226!important;
+    font-weight: bold;
+}
+
+.article-content h3{
+    line-height: normal!important;   
+}
+
+.btn_close {
+    width:104px;
+    height: 30px;
+    display: block;
+    border: none;
+    background: url("../img/btn_close.png")no-repeat;
+    text-indent: -9999px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
     
     #financials h3 {
         font-size: 14px;
@@ -1660,10 +1748,6 @@ h1,h2,h3,h4,h5 {
         left:-10%;
     }   
 
-    #expenditure img.elipse{
-        width: 40%;
-        padding: 0px 20px 0 40px;
-    }
 
 /*
     #expenditure h3:first-child{
@@ -1671,13 +1755,16 @@ h1,h2,h3,h4,h5 {
     }
 */
 
+    #expenditure .piestats {
+	    float:right;
+	    margin-right:40px;
+    }
 
     #expenditure h3{
-        text-align: center;
+	margin-left:30px;
     }
 
     #expenditure h2 {
-        float:none;
         margin-bottom: 20px;
         position: relative;
         left: 10%;
@@ -1704,3 +1791,30 @@ h1,h2,h3,h4,h5 {
         }
 
 }
+
+/* Target Mobile */
+@media screen and (max-width: 35.5em) { /*568px sm*/ 
+       #vision .triple { 
+	       display: none;
+       }
+       #expenditure h3 {
+	       margin-left:30px;
+       }
+       img.quote, .quote_right, .article-content .inner img.quote {
+	       width:70%;
+	       margin-left:15%;
+	       margin-right:15%;
+	       padding-left:0;
+       }
+       
+
+}
+/* Bigger than Mobile */
+@media screen and (min-width: 35.5em) { /*568px sm*/ 
+       #vision .single { 
+	       display: none;
+       }
+       #expenditure .piestats { 
+       }
+}
+

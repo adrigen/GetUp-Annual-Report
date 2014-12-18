@@ -2,28 +2,13 @@
         //Article Menu
 
         var openArticle = function () {
-            
+
             $(".article-menu div a").attr('class', 'inactive');
-            
-            
+
+
             $(this).attr('class', 'active');
-            
-            /*
-            $(".climate").css("display", "none");
-            $(".gbr").css("display", "none");
-            $(".abc").css("display", "none");
-            $(".refugees").css("display", "none");
-            $(".csg").css("display", "none");
-            $(".election").css("display", "none");
-            $(".climate").css("display", "none");
-            $(".democracy").css("display", "none");
-            $(".power").css("display", "none");
-            $(".marriage").css("display", "none");
-            $(".meet").css("display", "none");
-            $(".fairness").css("display", "none");
-            $(".forests").css("display", "none");
-            */
-            
+
+
             $(".climate").hide();
             $(".gbr").hide();
             $(".abc").hide();
@@ -37,15 +22,16 @@
             $(".meet").hide();
             $(".fairness").hide();
             $(".forests").hide();
-            
-            var currentId = "." + $(this).parent().attr('id');
+
+            //var currentId = "." + $(this).parent().attr('id');
+            var currentId = $(this).attr('href');
             $(console.log(currentId));
-            
+
             $(currentId).show( "fast");
-            //console.log()   
+            //console.log()
         }
 
-        $('.article-menu a').click(openArticle);
+        $('.article-menu a, #menu .article-left-menu a').click(openArticle);
 
 
         //Toggle classes
@@ -59,21 +45,23 @@
             //var scrollHeight = $(window).scrollTop();
             //console.log("menuHeight = "+ menuHeight);
             //$(".menu").css("top", scrollHeight + "px");
+            console.log("menu click");
+
         }
 
         $('#menuClose').click(toggleMenu);
         $('#menuLink').click(toggleMenu);
         $('#accordion a').click(toggleMenu);
-        $("#hamburger").click(toggleMenu);
+        //$("#hamburger").click(toggleMenu); was calling toggleMenu twice
 
 
         var clearAllMenuActive = function() {
-            $(".active").toggleClass("active");  
+            $(".active").toggleClass("active");
         };
 
         var toggleMenuClass = function() {
             clearAllMenuActive();
-          $(this).toggleClass("active");  
+          $(this).toggleClass("active");
         };
 
         $("#accordion div ul li a").click(toggleMenuClass);
@@ -85,8 +73,8 @@
         var menuHeight = $("#menu").height()
 
         //Menu position
-       
-        
+
+
         var checkMenuPos = function() {
                     //var menu   = document.getElementById('menu'),
                     var scrollHeight = $(window).scrollTop();
@@ -99,7 +87,7 @@
                     } else {
                          $('.menu').css({
                             'top': '0'
-                         }); 
+                         });
                     }
     };
 
@@ -108,15 +96,15 @@
      $(window).scroll(checkMenuPos);
      //$('#hamburger').click(checkMenuPos);
      $(window).resize(checkMenuPos);
-        
+
     $( "#accordion" ).accordion({
         heightStyle: "content",
         collapsible: true,
         animate: 200
-        
+
     });
 
-//anchor scrolling 
+//anchor scrolling
 
 /*
 var $root = $('html, body');
@@ -133,13 +121,15 @@ $('a').click(function() {
 
 $('#menu').singlePageNav({
 	updateHash: true,
-	currentClass: 'active',
+	currentClass: 'activeDISABLED', //remove 'DISABLED' to activate link updates
 	beforeStart: function() {
 	//	console.log('begin scrolling');
 	},
 	onComplete: function() {
 	}
 });
+
+/* Open current menu when scrolling
 
 $(window).scroll(function(){
 	var currentParent = $('#menu a.active').closest('div.ui-accordion-content').prev('h3');
@@ -150,6 +140,8 @@ $(window).scroll(function(){
 	currentParent.trigger('click');
 		        }
 });
+
+*/
 
 $(function() {
     FastClick.attach(document.body);
