@@ -33,6 +33,25 @@
 
         $('.article-menu a, #menu .article-left-menu a').click(openArticle);
 
+        var closeArticle = function () {
+          $(".climate").hide();
+          $(".gbr").hide();
+          $(".abc").hide();
+          $(".refugees").hide();
+          $(".csg").hide();
+          $(".election").hide();
+          $(".climate").hide();
+          $(".democracy").hide();
+          $(".power").hide();
+          $(".marriage").hide();
+          $(".meet").hide();
+          $(".fairness").hide();
+          $(".forests").hide();
+
+          $(".article-menu div a").attr('class', 'inactive');
+        }
+
+        $('.btn_close').click(closeArticle);
 
         //Toggle classes
         var toggleMenu = function () {
@@ -129,6 +148,8 @@ $('#menu').singlePageNav({
 	}
 });
 
+$('#hamburger').scrollupbar();
+
 /* Open current menu when scrolling
 
 $(window).scroll(function(){
@@ -147,4 +168,17 @@ $(function() {
     FastClick.attach(document.body);
 });
 
+$('#community-button').click(function() {
+  $( ".communityrun" ).slideToggle();
+});
+
 })(jQuery);
+
+jQuery(document).ready(function($) {
+
+  // site preloader -- also uncomment the div in the header and the css style for #preloader
+  $(window).load(function(){
+    $('#preloader').fadeOut('slow',function(){$(this).remove();});
+  });
+
+});

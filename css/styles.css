@@ -17,7 +17,7 @@ img {
 /**/
 
 body {
-    width: 100%;   
+    width: 100%;
     position: relative;
     text-align: center;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .main {
-    width: 100%;   
+    width: 100%;
     height: 100%;
     position: relative;
     text-align: left;
@@ -60,7 +60,7 @@ body {
 .menu {
     background-color: #b5b5b5;
     text-align: left;
-    z-index: 1000;
+    z-index: 998;
     text-transform: uppercase;
     max-height: 100%;
     overflow-y: auto;
@@ -81,7 +81,7 @@ body {
     font-size: 26px;
     text-indent: 10px;
     letter-spacing: 0.1rem;
-    
+
 }
 
 .menu h3 span{
@@ -111,7 +111,7 @@ body {
 
 .menu li a{
     text-decoration: none;
-    color: #fff;    
+    color: #fff;
     font-size: .9em;
     padding: 8px 30px 8px 30px;
     width: 100%;
@@ -125,7 +125,7 @@ body {
 }
 
  .ui-accordion .ui-accordion-content{
-      box-sizing:content-box!important;             
+      box-sizing:content-box!important;
       -moz-box-sizing:content-box!important;
 }
 
@@ -171,13 +171,21 @@ body {
 /*--------------------------------*/
 
 
+.js div#preloader {
+	position: fixed;
+	left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible;
+	background: white; }
+
+#swiffycontainer {
+	display: none;
+}
 
 .content {
     max-width:928px;
     position: relative;
     background-color: #444;
     float:right;
-    line-height: 0; 
+    line-height: 0;
     overflow: hidden;
 }
 
@@ -185,10 +193,14 @@ body {
     float:left;
 }
 
+h3 {
+	word-spacing:0.2em;
+}
+
 .content h2 {
-    text-transform: uppercase;   
+    text-transform: uppercase;
     display: block;
-    
+
     margin: 0;
     padding:10px 0px 3px 0px;
 /*    text-indent: 40px;*/
@@ -214,9 +226,9 @@ body {
 }
 
 .content h2 a{
-    float:right;   
+    float:right;
     text-indent: -9999px;
-    
+
     display: block;
     height: 100%;
     width:40px;
@@ -232,11 +244,11 @@ body {
 }
 
 .text-center {
-    text-align: center;   
+    text-align: center;
 }
 
 .text-right {
-    text-align: right!important;   
+    text-align: right!important;
 }
 
 .content p {
@@ -266,7 +278,7 @@ img.quote {
 }
 
 #about_us .inner-text {
-    padding: 40px 0 40px 0;   
+    padding: 40px 0 40px 0;
     background:url("../img/about_us_top_bg.png") no-repeat;
     background-size: cover;
 }
@@ -281,7 +293,7 @@ img.quote {
 }
 
 #about_us .thumbs, #communityrun .thumbs {
-    line-height: 0;   
+    line-height: 0;
 }
 
 #about_us .thumbs img, #communityrun .thumbs img{
@@ -308,7 +320,7 @@ img.quote {
 
 #community {
     background: url("../img/community_bg.png") no-repeat;
-    background-size: cover;   
+    background-size: cover;
 }
 
 
@@ -320,11 +332,11 @@ img.quote {
 }
 
 #community .inner-text p {
-    margin:20px 30px 0 10px;   
+    margin:20px 30px 0 10px;
 }
 
 #community .inner-text p:first-child{
-    font-size:1rem;   
+    font-size:1rem;
     line-height: 1.4rem;
     padding-bottom: 20px;
 }
@@ -359,7 +371,7 @@ img.quote {
 }
 
 #members_1 #totalMembers h3{
-    font-size: 65px;   
+    font-size: 65px;
     margin-bottom: 55px;
     margin-top: 57px;
 }
@@ -367,11 +379,11 @@ img.quote {
 #members_1 #totalMembers h4{
     font-size: 32px;
     margin-bottom: 0;
-    
+
 }
 
 #members_1 #totalMembers img{
-    float:left;   
+    float:left;
 }
 
 #members_1 #newMembers{
@@ -380,11 +392,11 @@ img.quote {
 }
 
 #members_1 #newMembers img{
-    float:left;   
+    float:left;
 }
 
 #members_1 #newMembers h3{
-    font-size: 45px;   
+    font-size: 45px;
     margin-bottom: 40px;
         margin-top: 60px;
 }
@@ -394,7 +406,7 @@ img.quote {
 
 }
 
-#members_1 #newMembers .memberText { 
+#members_1 #newMembers .memberText {
     display: block;
     width: 160px;
     text-align: center;
@@ -414,7 +426,7 @@ img.quote {
 }
 
 #working h2{
-    color: #fff;   
+    color: #fff;
 }
 
 #together {
@@ -424,10 +436,10 @@ img.quote {
 }
 
 #together h2{
-    color: #fff;   
+    color: #fff;
     font-family: 'abel', sans-serif;
     font-weight: lighter;
-    
+
 }
 
 #part_of {
@@ -436,7 +448,7 @@ img.quote {
 }
 
 #part_of img{
-    padding:15px;   
+    padding:15px;
 }
 
 #ways {
@@ -445,17 +457,17 @@ img.quote {
 }
 
 #ways h2{
-    color: #fff;   
+    color: #fff;
     font-family: 'abel', sans-serif;
     font-weight: lighter;
     font-size: 30px;
     background: #363635;
     padding: 15px 0 15px 0;
-    
+
 }
 
 #ways img {
-    width:80%; 
+    width:80%;
 
 }
 
@@ -467,7 +479,7 @@ img.quote {
 #by_state img{
     padding: 0px 0 20px 0;
     width: 80%;
-    
+
 }
 
 #by_state h2 {
@@ -490,7 +502,7 @@ img.quote {
 }
 
 #actions h2{
-    color: #fff;   
+    color: #fff;
     font-family: 'abel', sans-serif;
     font-weight: lighter;
     background: #363635;
@@ -511,7 +523,7 @@ img.quote {
 }
 
 .dummy {
-   margin-top: 100%;   
+   margin-top: 100%;
 }
 
 #actions .numberContainer .numberInner {
@@ -537,7 +549,7 @@ img.quote {
 }
 
 #actions .icon img {
-    width: 90%;   
+    width: 90%;
     margin-top: 5%;
 }
 
@@ -687,7 +699,7 @@ img.quote {
 }
 
 #social-media .socialNumber p{
-    float:left;   
+    float:left;
     display: table-cell;
     font-family: 'abel', sans-serif;
     font-size: 14px;
@@ -695,7 +707,7 @@ img.quote {
 }
 
 #social-media .socialNumber h3{
-    color: #fff;   
+    color: #fff;
     display: table-cell;
     clear: left;
     margin: 0;
@@ -704,9 +716,80 @@ img.quote {
     font-size: 32px;
     font-family: 'bebasregular', sans-serif;
 }
+.article-content h3 {
+	padding-bottom:0px;
+}
+
+.article-content h5 {
+	font-weight: bold;
+}
+
+p.orange-para {
+	color:#f05226!important;
+	font-weight: bold;
+	font-size: 16px!important;
+	line-height: 20px!important;
+}
+
+.orange-box {
+	background: #f05226;
+	margin-top:30px;
+	margin-bottom: 30px;
+	max-width: 565px;
+	margin-left:10px;
+}
+
+.orange-box div{
+	padding:20px;
+}
+
+.orange-box p{
+	color:#fff!important;
+	font-size: 15px!important;
+	line-height: 20px!important;
+}
+
+.orange-box a{
+	color:#000!important;
+	text-decoration: underline;
+}
+
+.orange-box p span{
+	text-transform: uppercase;
+}
+
+.bordered-box {
+	padding:0 15px 15px 15px;
+	border: solid 3px #797979;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.bordered-box span{
+	text-transform: uppercase;
+	color:#f05226!important;
+	font-weight: bold;
+}
+
+.article-content h3{
+	line-height: normal!important;
+}
+
+.btn_close {
+	width:104px;
+	height: 30px;
+	display: block;
+	border: none;
+	background: url("../img/btn_close.png") no-repeat;
+	text-indent: -9999px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
 
 #articles .article-menu div {
-    background: #b4b5b5;   
+    background: #b4b5b5;
     text-align: center;
 }
 
@@ -727,67 +810,67 @@ img.quote {
 
 #articles .article-menu #climate_button a {
     background: url("../img/article_cta_climate.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 #articles .article-menu #gbr_button a{
     background: url("../img/article_cta_reef.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 #articles .article-menu #abc_button a{
     background: url("../img/article_cta_abc.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 #articles .article-menu #refugees_button a{
     background: url("../img/article_cta_refugees.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 #articles .article-menu #csg_button a {
     background: url("../img/article_cta_csg.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 #articles .article-menu #election_button a{
     background: url("../img/article_cta_election.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 #articles .article-menu #democracy_button a{
     background: url("../img/article_cta_democracy.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 #articles .article-menu #power_button a{
     background: url("../img/article_cta_power.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 #articles .article-menu #marriage_button a {
     background: url("../img/article_cta_marriage.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 #articles .article-menu #meet_button a{
     background: url("../img/article_cta_meet.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 #articles .article-menu #fairness_button a{
     background: url("../img/article_cta_fairness.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 #articles .article-menu #forests_button a{
     background: url("../img/article_cta_forests.png") no-repeat;
-    background-size:cover; 
+    background-size:cover;
 }
 
 
 .article-content {
- text-align: left!important;  
+ text-align: left!important;
     background: #fff;
 }
 
@@ -843,7 +926,7 @@ img.quote {
 }
 
 .article-margin {
-    margin-top:20px;   
+    margin-top:20px;
 }
 
 .article-margin .flag{
@@ -910,7 +993,7 @@ img.quote {
 }
 
 #coreMembers_2 img {
-    margin-top:20px;   
+    margin-top:20px;
 }
 
 #coreMembers_2 h2 {
@@ -935,12 +1018,12 @@ img.quote {
 }
 
 #coreMembers_2 h3 {
-    font-size: 37px;  
+    font-size: 37px;
     margin-bottom:25px;
 }
 
 #coreMembers_2 h4 {
-    font-size: 14px; 
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -956,23 +1039,29 @@ img.quote {
 }
 
 #coreMembers_2 .inner h3{
-    float:left;   
+    float:left;
 }
 
 
 /*COMMUNITYRUN*/
+.communityrun {
+	display: none;
+}
+#community-button {
+	cursor:pointer;
+}
 #communityrun {
     background: url("../img/background_community_run.png") no-repeat;
     background-size: cover;
 }
 
 #communityrun .data {
-    margin-top:180px;   
+    margin-top:180px;
     padding-bottom: 40px;
 }
 
 #communityrun img {
-    margin-top:20px;   
+    margin-top:20px;
 }
 
 #communityrun h2 {
@@ -997,12 +1086,12 @@ img.quote {
 }
 
 #communityrun h3 {
-    font-size: 37px;  
+    font-size: 37px;
     margin-bottom:25px;
 }
 
 #communityrun h4 {
-    font-size: 14px; 
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -1018,7 +1107,7 @@ img.quote {
 }
 
 #communityrun .inner h3{
-    float:left;   
+    float:left;
 }
 
 
@@ -1033,7 +1122,7 @@ img.quote {
  }
 
 .right-expenditure p{
-    padding-left:15%!important;   
+    padding-left:15%!important;
 }
 
 #expenditure img.elipse{
@@ -1042,13 +1131,13 @@ img.quote {
 
 /*
 #expenditure h3:first-child{
-    margin-top:80px;   
+    margin-top:80px;
 }
 */
 
 /*
 #expenditure h3:last-child{
-    color:#fff;   
+    color:#fff;
 }
 */
 
@@ -1072,7 +1161,7 @@ img.quote {
 
 #expenditure h2 {
     display:block;
-  
+
     background-size: cover;
   width: 427px;
   height: 33px;
@@ -1087,8 +1176,19 @@ img.quote {
     background: url("../img/heading_expenditures.png") no-repeat;
 }
 
-#expenditure h2:nth-child(3) {
-      background: url("../img/heading_top_campaigns.png") no-repeat!important;
+#expenditure h2.top-campaign {
+      background: url("../img/heading_top_campaign_tactics.png") no-repeat!important;
+}
+#team h2.team {
+	background: url("../img/heading_team.png") no-repeat!important;
+	display:block;
+	background-size: cover;
+	width: 427px;
+	height: 33px;
+	display: block;
+	padding: 0;
+	margin: 35px 0 0 0;
+	text-indent:-9999px;
 }
 
 #expenditure p {
@@ -1134,16 +1234,16 @@ img.quote {
 }
 
 #expenditure ul li img {
-    width:30px;   
+    width:30px;
     padding-right:10px;
 }
 
 #vision {
-    background: #b4b5b5;   
+    background: #b4b5b5;
 }
 
 #vision .vision_data {
-   width:85%; 
+   width:85%;
     padding-left: 60px;
 }
 
@@ -1169,7 +1269,7 @@ img.quote {
 }
 
 #vision .intro {
-    
+
 }
 
 #vision .intro p{
@@ -1209,7 +1309,7 @@ img.quote {
 }
 
 #audit img {
-    width:100%;   
+    width:100%;
 }
 
 #audit h2 {
@@ -1221,11 +1321,11 @@ img.quote {
     width:526px;
     height:33px;
     background: url("../img/heading_audit_report.png");
-    
+
 }
 
 .infoContainer p{
-    color: #fff!important;   
+    color: #fff!important;
 }
 
 #vision .infoContainer h4{
@@ -1237,7 +1337,7 @@ img.quote {
 
 
 #community_2 .image-elipse {
-    width:90%;   
+    width:90%;
 }
 
 #community_2 p{
@@ -1247,7 +1347,7 @@ img.quote {
 }
 
 #community_2 a {
-    color:#fff;   
+    color:#fff;
 }
 
 #community_2 .quote {
@@ -1262,7 +1362,7 @@ img.quote {
 
 #community_2 h2{
    color:#363635;
-    font-size:30px; 
+    font-size:30px;
     padding-right:30px;
 }
 
@@ -1311,9 +1411,9 @@ img.quote {
     font-weight: bold;
     line-height:1;
 }
-    
+
 #team p{
-     padding:5px 40px 5px 40px;   
+     padding:5px 40px 5px 40px;
     font-size: 14px;
     line-height: 22px;
 }
@@ -1374,11 +1474,11 @@ img.quote {
     font-family: 'bebasregular', sans-serif;
     font-size: 25px;
     padding: 30px 0 0 40px;
-    margin-bottom: -10px;;   
+    margin-bottom: -10px;;
 }
 
 #thanks p{
-     padding:5px 40px 5px 40px;   
+     padding:5px 40px 5px 40px;
     font-size: 14px;
     line-height: 22px;
 }
@@ -1389,13 +1489,13 @@ img.quote {
 }
 
 #board p{
-    padding:5px 40px 5px 40px;   
+    padding:5px 40px 5px 40px;
     font-size: 14px;
     line-height: 22px;
 }
 
 #board .intro{
-    padding-bottom:30px;   
+    padding-bottom:30px;
 }
 
 #board h3 {
@@ -1405,7 +1505,7 @@ img.quote {
     font-family: 'bebasregular', sans-serif;
     font-size: 35px;
     padding: 10px 0 0 40px;
-    margin-bottom: -10px;;   
+    margin-bottom: -10px;;
 }
 
 /*
@@ -1424,15 +1524,15 @@ img.quote {
 
 /*Target Large Screens*/
 @media screen and (min-width: 64em) { /*1024px lg*/
-        
+
     #members_1 div:last-child {
-            text-align: left!important;   
+            text-align: left!important;
      }
-    
+
     .content-center img {
         width:100%;
     }
-    #expenditure .piestats { 
+    #expenditure .piestats {
 	    text-align:right;
     }
 }
@@ -1440,24 +1540,24 @@ img.quote {
 
 @media screen and (min-width: 48em) { /*768px md*/
 
-    
+
     #hamburger {
         display:none;
     }
-    
+
     #menuClose {
-        display:none;   
+        display:none;
     }
-    
+
     .menu {
         position:relative;
         top:0;
     }
-    
+
     #actions img{
         width:100%;
     }
-    
+
     #financials h3 {
         font-size: 22px;
     }
@@ -1471,33 +1571,33 @@ img.quote {
 
 /*Target Small Screens*/
 @media screen and (max-width: 48em) { /*768px md*/
-    
-    
+
+
     #community_2 p{
         padding-left:40px;
     }
-    
+
     #community_2 h2{
         padding-left:40px;
     }
-    
+
     #community_2 .quote{
         padding-left:40px;
     }
-    
+
 #communityrun .data {
-    margin-top:40px;   
+    margin-top:40px;
     padding-bottom: 40px;
 }
 
-    
+
 
     .header {
         height: 150px;
         background-size:cover;
     }
 
-    
+
     .menu {
         position: fixed;
 /*        top:0;*/
@@ -1520,29 +1620,29 @@ img.quote {
          overflow-y:scroll;
     overflow-x:hidden;
     }
-    
+
     #hamburger.active {
         position:fixed;
         opacity: 0;
-        
+
     }
-    
+
     .content {
         left:0;
     }
-    
+
     .content h2{
-        font-size: 18px;   
+        font-size: 18px;
         padding-top: 8px;
         padding-bottom: 8px;
     }
-    
+
     .content h2.section {
         text-indent:20px;
     }
 
     .content h2 a{
-        float:right;   
+        float:right;
         text-indent: -9999px;
 
         display: block;
@@ -1560,48 +1660,48 @@ img.quote {
     }
 
     #hamburger {
-        display:block;   
+        display:block;
         opacity: 1;
     }
-    
+
     #about_us p {
-        margin: 15px 30px 15px 30px;   
+        margin: 15px 30px 15px 30px;
     }
-    
+
     #actions img{
         width:100%;
     }
-    
+
     #community .inner-text {
-        background: rgba(0, 0, 0, 0.5);   
+        background: rgba(0, 0, 0, 0.5);
     }
-    
+
     #actions .numberContainer .numberInner h3{
         font-size: 40px;
     }
-    
+
     #members_1 .memberText {
-        text-align:left!important; 
+        text-align:left!important;
         width:120px!important;
     }
-    
+
     #members_1 .memberText h3{
-        font-size: 40px!important;   
+        font-size: 40px!important;
     }
-    
+
     #members_1 .memberText h4{
-        font-size: 15px!important;   
+        font-size: 15px!important;
     }
-    
+
     #members_1 #totalMembers{
 /*        width:100%;  */
         width:289px;
     }
-    
+
     #members_1 #totalMembers h3{
         margin-bottom: 40px;
     }
-    
+
     #coins h3{
         font-size:15px;
     }
@@ -1610,14 +1710,14 @@ img.quote {
         font-size: 55px;
         margin: 35px 0 35px 0;
     }
-    
+
     #coreMembers h2 {
         width:100%;
         background-size: contain;
     }
-    
+
     #coreMembers h3 {
-        font-size: 50px;   
+        font-size: 50px;
     }
 
     #coreMembers #data {
@@ -1634,90 +1734,22 @@ img.quote {
     }
 
     .socialNumbers {
-        margin-left:10%;   
+        margin-left:10%;
     }
-    
+
     #articles .article-menu a {
         width:150px;
         height:147px;
     }
-    
+
     .article-margin {
-        display:none;   
+        display:none;
     }
 
-.article-content h3 {
-    padding-bottom:0px;   
-}
 
-.article-content h5 {
-    font-weight: bold;   
-}
 
-p.orange-para {
-    color:#f05226!important;
-    font-weight: bold;
-    font-size: 16px!important;
-    line-height: 20px!important;
-}
 
-.orange-box {
-    background: #f05226;
-    margin-top:30px;
-    margin-bottom: 30px;
-    max-width: 565px;
-    margin-left:10px;
-}
 
-.orange-box div{
-    padding:20px;   
-}
-
-.orange-box p{
-    color:#fff!important;
-    font-size: 15px!important;
-    line-height: 20px!important;
-}  
-
-.orange-box a{
-    color:#000!important;
-    text-decoration: underline;
-}
-
-.orange-box p span{
-    text-transform: uppercase;
-}   
-
-.bordered-box {
-    padding:0 15px 15px 15px;
-    border: solid 3px #797979;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.bordered-box span{
-    text-transform: uppercase;
-        color:#f05226!important;
-    font-weight: bold;
-}
-
-.article-content h3{
-    line-height: normal!important;   
-}
-
-.btn_close {
-    width:104px;
-    height: 30px;
-    display: block;
-    border: none;
-    background: url("../img/btn_close.png")no-repeat;
-    text-indent: -9999px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-    
     #financials h3 {
         font-size: 14px;
     }
@@ -1726,7 +1758,7 @@ p.orange-para {
         font-size: 45px;
         margin-top: 45px;
     }
-    
+
     #financials p {
         padding: 5px 20px 5px 20px;
     }
@@ -1742,16 +1774,16 @@ p.orange-para {
         float:right;
         padding-right: 20px;
     }
-    
+
     #coreMembers_2 h2 {
         position: relative;
         left:-10%;
-    }   
+    }
 
 
 /*
     #expenditure h3:first-child{
-        margin-top:30px;   
+        margin-top:30px;
     }
 */
 
@@ -1769,15 +1801,15 @@ p.orange-para {
         position: relative;
         left: 10%;
     }
-    
+
     #expenditure p {
-        clear:both;   
+        clear:both;
     }
-    
+
     #expenditure ul li{
         padding-left: 40px;
     }
-    
+
     #team h5 {
         line-height: normal;
         margin: auto;
@@ -1787,14 +1819,14 @@ p.orange-para {
     }
 
         #board h3 {
-         padding-right: 15px;   
+         padding-right: 15px;
         }
 
 }
 
 /* Target Mobile */
-@media screen and (max-width: 35.5em) { /*568px sm*/ 
-       #vision .triple { 
+@media screen and (max-width: 35.5em) { /*568px sm*/
+       #vision .triple {
 	       display: none;
        }
        #expenditure h3 {
@@ -1806,15 +1838,14 @@ p.orange-para {
 	       margin-right:15%;
 	       padding-left:0;
        }
-       
+
 
 }
 /* Bigger than Mobile */
-@media screen and (min-width: 35.5em) { /*568px sm*/ 
-       #vision .single { 
+@media screen and (min-width: 35.5em) { /*568px sm*/
+       #vision .single {
 	       display: none;
        }
-       #expenditure .piestats { 
+       #expenditure .piestats {
        }
 }
-
